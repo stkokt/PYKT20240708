@@ -114,6 +114,13 @@ print("Methode 'is_integer()' am Datentyp 'int' für Variable var5: ",var5.is_in
 print("Methode 'title()' am Datentyp 'str' für Variable var7: ",var7.title())
 print("Methode 'split()' am Datentyp 'str' für Variable var7: ",var7.split())
 
+print("\nZeile 117: Formatierte Ausgaben\n")
+
+print("Der Titel '"+var7+"' enthält",len(var7.split()),"Worte.")
+print("Der Titel '"+var7+"' enthält "+str(len(var7.split()))+" Worte.")
+print(f"Der Titel '{var7}' enthält {len(var7.split())} Worte.")
+print("Der Titel '{}' enthält {} Worte.".format(var7, len(var7.split())))
+
 
 
 
