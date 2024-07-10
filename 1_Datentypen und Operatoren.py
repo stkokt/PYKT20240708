@@ -116,10 +116,24 @@ print("Methode 'split()' am Datentyp 'str' für Variable var7: ",var7.split())
 
 print("\nZeile 117: Formatierte Ausgaben\n")
 
-print("Der Titel '"+var7+"' enthält",len(var7.split()),"Worte.")
-print("Der Titel '"+var7+"' enthält "+str(len(var7.split()))+" Worte.")
+print("Der Titel '"+var7+"' enthält",len(var7.split()),"Worte.") # Konkatinierung bei Strings, kommagetrennt bei anderen Datentypen
+print("Der Titel '"+var7+"' enthält "+str(len(var7.split()))+" Worte.") # Durch Konvertierung zu String (str(len(var7.split()))) Konkatination möglich
 print(f"Der Titel '{var7}' enthält {len(var7.split())} Worte.")
 print("Der Titel '{}' enthält {} Worte.".format(var7, len(var7.split())))
+"""
+Vorsicht! Das Folgende funktioniert nicht:
+
+print("Der Titel '{}' enthält {} Worte.".format(var7))
+
+wirft den Fehler:
+
+    print("Der Titel '{}' enthält {} Worte.".format(var7))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: Replacement index 1 out of range for positional args tuple
+
+Das meint, dass der zweite Platzhalter (Replacement index 1) in .format() nicht übergeben wurde.
+"""
+
 
 
 
