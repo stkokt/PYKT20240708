@@ -46,7 +46,7 @@ Zuweisungsoperatoren:
 *=
 /=
 **=     b **= 10 (b hoch 10)
-//=     a //= 4 (a = 2)
+//=     (wenn a = 10) a //= 4 (a == 2)
 
 
 Logikoperatoren:
