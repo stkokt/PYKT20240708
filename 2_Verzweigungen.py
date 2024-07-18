@@ -47,3 +47,30 @@ else:
     pass
 
 
+
+# Verzweigung mit match case
+# z.B. zum Erstellen eines Konsolenmenüs
+
+# Ausgabe, damit der User weiß, was er tun soll
+print("1 = inch zu cm\n 2 = Trinkgeld\n 99 = exit ")    
+
+# Variable, gegen die geprüft wird
+var_f = input("Gebe eine Nummer des Menüs ein:\n")
+
+match var_f:
+    case "1":
+        print("inch zu cm") # Algo inch2cm
+    case "2":
+        print("Trinkgeld")  # Algo Trinkgeld
+    case "99":
+        pass                # match- Block wird verlassen    
+    case _ :
+        pass                # Bei Eingabe eines Zeichens, 
+                            # das im Menü nicht aufgeführt wird
+
+
+print('Frank\'s Kittchen\\')
+
+
+
+
