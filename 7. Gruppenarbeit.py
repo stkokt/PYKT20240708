@@ -107,6 +107,6 @@ print("\ngeaenderte Liste:\n", liste6squared, "\n")
 
 liste7=[[[i+1+j*3+k*9 for i in range(3)] for j in range(3)] for k in range(3)]
 # liste7 = [[i, i+1, i+2] for i in range(1, 28, 3)]     # Alternative Silvio
-# liste7=[[[ z+y*3+x*9 for z in range(1,4) ]for y in range(3) ] for x in range(3)]      # Alternative 
+# liste7=[[[ z+y*3+x*9 for z in range(1,4) ]for y in range(3) ] for x in range(3)]      # Alternative Gordon
 print("Aufgabe 7\n")
 print(liste7)
