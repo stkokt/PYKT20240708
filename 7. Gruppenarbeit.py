@@ -49,7 +49,7 @@ print(liste4_3)
 #5 Erzeuge eine Liste bis 100, in der statt einer durch 5 teilbaren Zahl eine Liste eingefügt wird, 
 # die alle bis dorthin durch 5 teilbaren Zahlen enthält. Also: [[0],1,2,3,4,[0,5],6,7,8,9,[0,5,10]...
 
-print("Aufgabe 5")
+print("Aufgabe 5\n")
 import random
 liste5=[x for x in range(100)]
 
